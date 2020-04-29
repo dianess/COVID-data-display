@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!-- This head section puts the title on the tab of the webpage, resets the css style
+so each browser responds to the bootstrap styles and the styles in my css file.
+The h1 header prints at the top of the screen. -->
+<head>
+    <meta charset="utf-08">
+    <title>Stocking Presidents</title>
+    <link rel="stylesheet" href="WebVisualizations/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="WebVisualizations/style.css">
+    <h1>Stocking Presidents</h1>
+</head>
+
+<!-- Apply the bootstrap navbar and dropdown classes -->
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="WebVisualizations/comparisons.html">Comparisons</a>
+                </li>
+                <li>
+                    <a href="WebVisualizations/data.html">Data</a>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbtn">Plots</a>
+                        <div class="dropdown-content">
+                            <a href="WebVisualizations/daily_close.html">Daily Close</a>
+                            <a href="WebVisualizations/daily_change.html">Daily Change</a>
+                            <a href="WebVisualizations/boxplot_election_to_inauguration.html">Box Plot: Election to Inauguration</a>
+                            <a href="WebVisualizations/boxplot_presidential_terms.html">Box Plot: Presidential Terms</a>
+                            <a href="WebVisualizations/percent_positive_close_days.html">Percent Positive Close Days</a>
+                        </div>  <!-- ending div for dropdown-content -->
+                    </div>    <!-- ending div for dropdown -->
+                </li>
+            </ul>
+        </nav>
+    <!-- This section contains a summary of the project, including the hypothesis and conclusion with graphs throughout the description. -->
+    <section>
+        <h2>Project Summary</h2> 
+        <p> In this project, our team tested this hypothesis: If the President of the United States influences
+            the stock market, we would expect the frequency of positive or negative close days,
+            measured from election day to inauguration day and by total term of each President,
+            to be greater than the market historical average.</p>
+        <p> We tested our hypothesis using the Dow Jones Industrial Average Index from January 3, 2001 
+            through September 27, 2019.   
+        </p>
+        <p> To begin, here's a readily available chart of the Dow Jones Industrial Average Index
+            over the past 100 years. Source:
+            <a href="https://www.macrotrends.net/1319/dow-jones-100-year-historical-chart">Dow Jones 100 Year Historical Chart</a>
+        </p>
+
+        Dow Jones Industrial Average Index 100 years
+        <img class="img-fluid" src="WebVisualizations/Dow_Jones_Index_100_years.png" alt="Dow Jones 100 Years">
+        
+        <p> Because our project focuses on the last 20 years, here's a similar chart
+            for the Dow Jones Industrial Average Index over the past 20 years. 
+        </p>
+
+        Dow Jones Industrial Average Index 20 years
+        <img class="img-fluid" src="WebVisualizations/Dow_Jones_20_year.png" alt="Dow Jones 20 Years">
+
+        <p></p>  <!-- Adding a little space between the graph above and the text -->
+        <p> For details on the following charts, click on the corresponding chart title on the "Plots" link above.
+        </p>   
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                <p> This is our version of the 20-year chart, color-coded by Presidential term.
+                </p>    
+                Daily Close
+        
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Close.png" alt="Daily Close">
+                </div>  <!-- ending div for col-md-6 -->
+                
+                <div class="col-md-6">
+     
+                Daily Change
+            
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Presidential_term_Daily_Change.png" alt="Daily Change">
+                </div>   <!-- ending div for col-md-6 -->              
+            </div>  <!-- ending div for row -->
+        </div>  <!-- ending div for this container -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                Dow Jones Daily Change from Election to Inauguration
+
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Election_to_Inauguration_boxplot.png" alt="Dow Jones Daily Change from Election to Inauguration">
+                </div>   <!-- ending div for col-md-6 -->
+
+                <div class="col-md-6">
+                Dow Jones Daily Change by Presidential Term
+
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Presidential_Term_boxplot.png" alt="Dow Jones Daily Change by Presidential Term">
+                </div>    <!-- ending div for col-md-6 -->
+            </div>  <!-- ending div for row -->
+        </div>   <!-- ending div for this container -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                Percent Positive Close Days
+                <img class="img-fluid" src="WebVisualizations/Resources/assets:images/Percent_Positive_Close_Days.png" alt="Percent Positive Close Days">
+                </div>   <!-- ending div for col-md-6 -->
+            </div>  <!-- ending div for row -->
+            <p> Conclusion: Based on this data, we failed to reject the null-hypothesis, which was: If the President of the United States
+                does not influence the stock market, we would expect the frequency of positive and negative close days,
+                measured from election to inauguration and by total term of each President, to be equal to the market
+                historical average. 
+                </p>           
+        </div>  <!-- ending div for this container -->
+    </section>  <!-- ending of section that starts before "Project Summary" -->
+
+    </div> <!-- Closes the container div at top, just below the body. -->
+</body> <!-- ending of the body -->
+
+</html>
