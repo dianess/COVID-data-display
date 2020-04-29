@@ -86,7 +86,8 @@ img.resize {
 /* Give the navbar some padding and a background color */
 .navbar {
   padding: 10px;
-  background: #5191fd;
+  background: rgb(7,32,89);
+  /*background: #5191fd;*/
 }
 
 /* Make the navbar li's inline-block elements */
