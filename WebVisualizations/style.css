@@ -131,8 +131,7 @@ img.resize {
 
 /* Dropdown Button */
 .dropbtn {
-  background-color: white;
-  color: white;
+  background: rgb(252,188,7);
   border: none;
   float: right;
 }
