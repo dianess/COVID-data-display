@@ -87,7 +87,6 @@ img.resize {
 .navbar {
   padding: 10px;
   background: rgb(7,32,89);
-  /*background: #5191fd;*/
 }
 
 /* Make the navbar li's inline-block elements */
@@ -97,7 +96,7 @@ img.resize {
   margin-right: 5px;
   margin-left: 5px;
   cursor: pointer;
-  background: #fff;
+  background: rgb(252,188,7);
   border-radius: 3px;
   font-size: 20px;
   text-align: center;
