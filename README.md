@@ -1,6 +1,6 @@
 # Coconino County COVID-19 Business Leaders' Survey Results
 
-This link will take you to the results: [Coconino County and Sedona COVID-19 Business Leaders' Survey Results](https://dianess.github.io/COVID-data-display/)
+Compared to my County-Effects-of-COVID repository (which is a Prezi presentation), this link takes you to my HTML created page for the same results: [Coconino County and Sedona COVID-19 Business Leaders' Survey Results](https://dianess.github.io/COVID-data-display/)
 
 To view the Prezi version of this same data: [Coconino County and Sedona COVID-19 Business Leaders' Survey Results in Prezi](https://dianess.github.io/County-Effects-of-COVID/)
 
